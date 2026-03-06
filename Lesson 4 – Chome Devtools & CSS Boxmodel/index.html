@@ -1,0 +1,110 @@
+<!-- you can use chrome dev tool to find any code on any website using inspect :)  -->
+
+
+
+<!--
+
+CSS box model
+
+padding – adds space between the border and any 
+
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 – CSS Basics</title>
+
+    <style>
+        .sub-btn {
+            background-color: rgb(204, 0, 0);
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left:16px;
+            padding-right: 16px;
+
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 20px;
+            transition: opacity 0.15s;
+
+
+        }
+
+        .sub-btn:hover{
+            opacity: 0.7;
+        }
+      
+        .sub-btn:active{
+            opacity: 0.4;
+        }
+
+
+        .join-btn {
+            background-color: white;
+            color: rgb(6, 95, 212);
+            border-color: rgb(6, 95, 212);
+            border-style: solid;
+            border-width: 1px;
+            
+            cursor: pointer;
+            margin-right: 20px;
+            transition: background-colour 0.15s, color 0.15s;
+
+            
+        }
+
+        /*
+        When creating any btn, using height and width is not a good way to display the dimentions 
+        as your words within the btn will leak out of the btn
+
+        we can use padding so that if we were to write more
+        */
+
+
+        .join-btn:hover{
+            background-color: rgb(6, 95, 212);
+            color: white;
+        }
+        .join-btn:active{
+            opacity: 0.7;
+        }
+        .tweet-btn{
+           background-color: rgb(29, 155, 240);
+           color: white;
+           font-weight: bold;
+           border: none;
+           height: 36px;
+           width: 75px;
+           border-radius: 20px;
+           cursor: pointer;
+          transition: box-shadow 0.15s;
+
+        }
+        .tweet-btn:hover{
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <button class="sub-btn"> SUBSCRIBE </button>
+
+    <button class="join-btn">JOIN</button>
+
+    <button class="tweet-btn">Tweet</button>
+</body>
+
+</html>
